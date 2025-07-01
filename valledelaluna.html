@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Turismo Bolivia</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="mi-encabezado"></div>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('mi-encabezado').innerHTML = data;
+      });
+  </script>
+
+   <section class="hero-valle" id="inicio">
+        
+        <div class="hero-texto">
+            <h1>Valle de la Luna: Un paisaje de otro mundo en el corazón de La Paz</h1>
+            <p>"Camina entre formaciones que parecen esculpidas por el viento… y por la luna."</p>
+        </div>
+    </section>
+
+  <section class="lugares-slider" id="lugares">
+    <h2>Destinos destacados</h2>
+    <div class="slider-contenedor">
+        <button class="flecha izquierda" onclick="moverTarjeta(-1)">&#10094;</button>
+
+        <div class="tarjetas-slider" id="contenedorTarjetas">
+            <div class="tarjeta">
+                <a href="#p1"> <img src="imagenes/imagenes_valle_de_la_luna/sendero del sol 1.webp" alt="sendero del sol"> </a>
+                <h3>Sendero del Sol</h3>
+                <p>Recorre el circuito principal y maravíllate con las formaciones más altas del valle</p>
+            </div>
+            <div class="tarjeta">
+               <a href="#p2">  <img src="imagenes/imagenes_valle_de_la_luna/sender de la luna 1.jpg" alt="sendero de la luna"></a>
+                <h3> Sendero de la Luna</h3>
+                <p>Un paseo corto, tranquilo y místico, entre torres de barro y silencio</p>
+            </div>
+            <div class="tarjeta">
+               <a href="#p3">  <img src="imagenes/imagenes_valle_de_la_luna/mirador.jpg" alt="mirador"></a>
+                <h3> Miradores naturales</h3>
+                <p>"Llévate la mejor postal lunar de La Paz desde sus balcones naturales.</p>
+            </div>
+             <div class="tarjeta">
+                <a href="#p4"> <img src="imagenes/imagenes_valle_de_la_luna/artesanias.jpg" alt="mirador"></a>
+                <h3> Artesanías</h3>
+                <p>Aprende la historia del valle y apoya a los artesanos locales</p>
+            </div>
+        </div>
+
+
+        <button class="flecha derecha" onclick="moverTarjeta(1)">&#10095;</button>
+    </div>
+    
+<section class="descripcion-coroico">
+  <div class="icono-titulo">
+
+    <h3>Coroico</h3>
+  </div>
+  <p>
+    A solo 10 km del centro de La Paz, el Valle de la Luna te transporta a un paisaje surreal, formado por miles de agujas y formaciones de arcilla que la erosión ha esculpido durante siglos. Es uno de los lugares más visitados de la ciudad por su belleza, accesibilidad y ambiente casi extraterrestre.
+
+
+  </p>
+</section>
+<section class="revista" id="actividades">
+    <h2>¿Qué hacer en el VALLE DE LA LUNA?</h2>
+
+    <div class="bloque">
+
+    <div class="img-contenedor">
+    <a href="https://www.instagram.com/explore/locations/206868692687979/valle-de-la-luna-bolivia/?locale=es" target="_blank">
+        <div class="img-hover">
+            <img src="imagenes/imagenes_valle_de_la_luna/sendero del sol 1.webp" alt="Sendero del Sol">
+            <div class="overlay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icono-hover">
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="texto">
+            <h3 id="p1"> Sendero del Sol</h3>
+            <p>Recorre el circuito principal y maravíllate con las formaciones más altas del valle."
+
+Este sendero es el más largo (aproximadamente 45 minutos) y ofrece vistas espectaculares desde sus miradores. A lo largo del camino encontrarás formaciones con nombres curiosos como El Sombrero de la Dama o La Madre Luna.
+
+Ideal para quienes buscan una caminata suave con vistas inolvidables.</p>
+        </div>
+    </div>
+</section>
+    <div class="bloque inverso">
+           <div class="img-contenedor">
+    <a href="https://www.instagram.com/explore/locations/239676259/valle-de-la-luna-bolivia/" target="_blank">
+        <div class="img-hover">
+            <img src="imagenes/imagenes_valle_de_la_luna/sender de la luna 1.jpg" alt="Cascadas Coroico">
+            <div class="overlay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icono-hover">
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="texto">
+            <h3 id="p2"> Sendero de la Luna</h3>
+            <p>"Un paseo corto, tranquilo y místico, entre torres de barro y silencio."
+
+Este circuito más corto (20-25 minutos) es perfecto para familias, adultos mayores o quienes prefieren una experiencia más relajada. La sensación de caminar entre columnas naturales te hará sentir en otro planeta.
+
+Perfecto para fotos únicas y reflexión en medio de un entorno mágico.</p>
+        </div>
+    </div>
+    
+
+  <section class="revista" id="actividades">
+  
+    <div class="bloque">
+         <div class="img-contenedor">
+    <a href="https://www.instagram.com/explore/locations/206868692687979/valle-de-la-luna-bolivia/?locale=es" target="_blank">
+        <div class="img-hover">
+            <img src="imagenes/imagenes_valle_de_la_luna/mirador.jpg" alt="Cascadas Coroico">
+            <div class="overlay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icono-hover">
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="texto">
+            <h3 id="p3">  Miradores naturales</h3>
+            <p>EA lo largo de ambos senderos hay puntos estratégicos donde puedes detenerte a contemplar el valle desde las alturas. Los amaneceres y atardeceres aquí son espectaculares, con los rayos del sol proyectando sombras largas y colores dorados sobre las formaciones.
+
+No olvides tu cámara: cada ángulo es una obra de arte natural.</p>
+        </div>
+    </div>
+    </section>
+
+        <div class="bloque inverso">
+         <div class="img-contenedor">
+    <a href="https://www.instagram.com/explore/locations/239676259/valle-de-la-luna-bolivia/" target="_blank">
+        <div class="img-hover">
+            <img src="imagenes/imagenes_valle_de_la_luna/artesanias.jpg" alt="artesanias">
+            <div class="overlay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icono-hover">
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="texto">
+            <h3 id="p4">  artesanías</h3>
+            <p>Aprende la historia del valle y apoya a los artesanos locales."
+
+Junto a la entrada encontrarás un pequeño centro de interpretación con información sobre la geología, flora, fauna y cultura del lugar. También hay puestos de venta de artesanías, postales, recuerdos y productos hechos a mano por los pobladores de Mallasa.
+
+Ideal para quienes desean conocer el contexto del paisaje y llevarse un recuerdo original.</p>
+        </div>
+    </div>
+
+    <div class="bloque">
+        <img src="" alt="">
+        <div class="texto">
+            <h3></h3>
+            <p></p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="info-horizontal" id="informacion">
+    <h2>Todo lo que debes saber</h2>
+    <div class="info-filas">
+        <div class="info-item">
+            <h3>¿Cómo llegar?</h3>
+            <p>A solo 20 a 30 minutos en auto desde el centro de La Paz.
+
+En transporte público: minibuses a Mallasa (ruta 11 o 43) desde el centro.
+
+Tours guiados desde el centro también disponibles.</p>
+        </div>
+        <div class="info-item">
+            <h3>Horarioss</h3>
+            <p>Abierto todos los días.
+
+Horario recomendado: de 9:00 a 16:00 (mejor luz para fotos).</p>
+        </div>
+        <div class="info-item">
+            <h3>Costo de ingreso
+</h3>
+            <p>Nacionales: 5 Bs
+
+Extranjeros: 15 Bs</p>
+        </div>
+    </div>
+</section>
+
+
+
+<div id="mi-footer"></div>
+
+<script>
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('mi-footer').innerHTML = data;
+    });
+</script>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
+
+<script>
+let desplazamientoTarjeta = 0;
+const contenedorTarjetas = document.getElementById('contenedorTarjetas');
+
+function moverTarjeta(direccion) {
+    const ancho = contenedorTarjetas.querySelector('.tarjeta').offsetWidth + 20; // 300px + gap
+    desplazamientoTarjeta += direccion * ancho;
+
+    const maxScroll = contenedorTarjetas.scrollWidth - contenedorTarjetas.clientWidth;
+    if (desplazamientoTarjeta < 0) desplazamientoTarjeta = 0;
+    if (desplazamientoTarjeta > maxScroll) desplazamientoTarjeta = maxScroll;
+
+    contenedorTarjetas.scrollTo({
+        left: desplazamientoTarjeta,
+        behavior: 'smooth'
+    });
+}
+</script>
+
+
+
+</body>
+</html>

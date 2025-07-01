@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    background-color: #B0D9D9; /* Turquesa claro */
+}
+
+header.encabezado {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #037F8C; /* Turquesa oscuro */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #F2A88D; /* Durazno */
+}
+
+.hero-coroico {
+    height: 100vh;
+    background-image: url('imagenes/imagenes_coroico/coroico portada.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+}
+.hero-centro {
+    height: 100vh;
+    background-image: url('imagenes/imagenes_centro/centro2.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+}
+.hero-valle {
+    height: 100vh;
+    background-image: url('imagenes/imagenes_valle_de_la_luna/valle de la luna 1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+}
+.hero-copacabana {
+    height: 100vh;
+    background-image: url('imagenes/imagenes_copacabana/copacabana\ 2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+}
+.hero-illimani {
+    height: 100vh;
+    background-image: url('imagenes/imagenes_illimani/illimani 4.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+}
+
+.hero-texto {
+    background-color: rgba(3, 127, 140, 0.6); /* Turquesa oscuro con opacidad */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+section {
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.lugares h2,
+.galeria h2,
+.contacto h2,
+.revista h2,
+.info-horizontal h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #8C402E; /* Marrón rojizo */
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tarjeta {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(140, 64, 46, 0.2); /* Marrón rojizo translúcido */
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    flex: 0 0 300px;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tarjeta h3 {
+    margin: 15px 0 5px;
+    color: #037F8C; /* Turquesa oscuro */
+}
+
+.tarjeta p {
+    padding: 0 15px 15px;
+    font-size: 0.95em;
+    color: #444;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imagenes img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.imagenes img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #037F8C; /* Turquesa oscuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.lugares-slider {
+    padding: 60px 30px;
+    background-color: #B0D9D9; /* Turquesa claro */
+    text-align: center;
+}
+
+.slider-contenedor {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.tarjetas-slider {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 90%;
+}
+
+.flecha {
+    background-color: #03A6A6; /* Turquesa brillante */
+    color: white;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.flecha:hover {
+    background-color: #F2A88D; /* Durazno */
+}
+
+.revista {
+    padding: 60px 30px;
+    background-color: #ffffff;
+}
+
+.bloque {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.bloque.inverso {
+    flex-direction: row-reverse;
+}
+
+.bloque img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.bloque .texto {
+    flex: 1;
+}
+
+.bloque .texto h3 {
+    margin-bottom: 10px;
+    color: #8C402E; /* Marrón rojizo */
+}
+
+.bloque .texto p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.info-horizontal {
+    background-color: #ffffff;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.info-filas {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0;
+}
+
+.info-item {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 15px;
+    border-left: 1px solid #ddd;
+}
+
+.info-item:first-child {
+    border-left: none;
+}
+
+.info-item h3 {
+    color: #037F8C; /* Turquesa oscuro */
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.img-contenedor {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.img-hover {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.img-hover img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.img-hover:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.img-hover:hover .overlay {
+    opacity: 1;
+}
+
+.icono-hover {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.descripcion-coroico {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.descripcion-coroico .icono-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.descripcion-coroico .icono {
+    width: 24px;
+    height: 24px;
+}
+
+.descripcion-coroico h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    color: #8C402E; /* Marrón rojizo */
+}
+
+.descripcion-coroico p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+}

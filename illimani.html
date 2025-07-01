@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Turismo Bolivia</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="mi-encabezado"></div>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('mi-encabezado').innerHTML = data;
+      });
+  </script>
+
+   <section class="hero-illimani" id="inicio">
+        
+        <div class="hero-texto">
+            <h1> Illimani: El gigante blanco que guarda La Paz</h1>
+            <p>"Majestuoso, inmenso y sagrado, el Illimani no solo se admira: se siente."</p>
+        </div>
+    </section>
+
+  <section class="lugares-slider" id="lugares">
+    <h2>Destinos destacados</h2>
+    <div class="slider-contenedor">
+        <button class="flecha izquierda" onclick="moverTarjeta(-1)">&#10094;</button>
+
+        <div class="tarjetas-slider" id="contenedorTarjetas">
+            <div class="tarjeta">
+                <a href="#p1"> <img src="imagenes/imagenes_illimani/escalada.jpg" alt="escalada al illimani"> </a>
+                <h3>Escalada al Illimani</h3>
+                <p>Conquista la cumbre más icónica de La Paz y toca el cielo con las manos</p>
+            </div>
+            <div class="tarjeta">
+               <a href="#p2">  <img src="imagenes/imagenes_illimani/laguna arteza.jpg" alt="laguna arteza"></a>
+                <h3>Laguna Arteza</h3>
+                <p>Un espejo escondido bajo el Illimani, ideal para conectarte con la paz de la montaña</p>
+            </div>
+            <div class="tarjeta">
+               <a href="#p3">  <img src="imagenes/imagenes_illimani/cañon de palca.jpg" alt="cañom de palca"></a>
+                <h3> Cañón de Palca</h3>
+                <p>Una catedral natural esculpida por el tiempo, con el Illimani como guardián.</p>
+            </div>
+             <div class="tarjeta">
+                <a href="#p4"> <img src="imagenes/imagenes_illimani/quilihuaya.jpg" alt="mirador quilihuaya"></a>
+                <h3> Mirador de Quilihuaya</h3>
+                <p>El Illimani frente a tus ojos: sin filtros, sin barreras, solo tú y la montaña</p>
+            </div>
+        </div>
+
+
+        <button class="flecha derecha" onclick="moverTarjeta(1)">&#10095;</button>
+    </div>
+    
+<section class="descripcion-coroico">
+  <div class="icono-titulo">
+
+    <h3>Escalada al Illimani</h3>
+  </div>
+  <p>
+ El Illimani, con sus 6.438 m s.n.m., es el símbolo eterno de La Paz. Presente en postales, leyendas y miradas diarias, este nevado no solo es la cima más alta de la Cordillera Real, sino también un destino turístico lleno de experiencias para escaladores, amantes de la naturaleza y caminantes curiosos.
+
+
+  </p>
+</section>
+<section class="revista" id="actividades">
+    <h2>¿Qué hacer en ILLIMANI?</h2>
+
+    <div class="bloque">
+
+    <div class="img-contenedor">
+    <a href="https://www.instagram.com/explore/locations/475204745/illimani/?locale=es_ES" target="_blank">
+        <div class="img-hover">
+            <img src="imagenes/imagenes_illimani/escalada.jpg" alt="escalada al illimani">
+            <div class="overlay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icono-hover">
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="texto">
+            <h3 id="p1"> Escalada al Illimani</h3>
+            <p>El ascenso comienza en la comunidad de Pinaya, a unas 5 horas de La Paz. Desde allí se camina hasta el Campamento Base (4.500 m s.n.m.), y luego al Nido de Cóndores, desde donde se parte hacia la cima. Es una travesía de 3 días que requiere experiencia, guía profesional y aclimatación.
+
+Dificultad: Alta (montañismo técnico).
+
+Agencias especializadas en La Paz ofrecen paquetes completos.
+
+Temporada ideal: mayo a agosto (época seca).</p>
+        </div>
+    </div>
+</section>
+    <div class="bloque inverso">
+           <div class="img-contenedor">
+    <a href="https://www.instagram.com/explore/locations/271353059958504/laguna-arteza-bolivia/" target="_blank">
+        <div class="img-hover">
+            <img src="imagenes/imagenes_illimani/laguna arteza 2.jpg" alt="laguna arteza">
+            <div class="overlay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icono-hover">
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="texto">
+            <h3 id="p2"> Laguna Arteza</h3>
+            <p>Esta laguna altoandina se encuentra en la ruta hacia Cohoni, a más de 4.000 metros de altura. Rodeada de ichu y montañas, refleja al Illimani como un espejo natural. Ideal para picnic, fotografía y caminatas suaves.
+
+Acceso en vehículo 4x4 o caminata desde Palca.
+
+Clima frío; llevar abrigo, agua y comida.
+
+Excelente opción para acampar o pasar el día.
+
+Un rincón silencioso, perfecto para contemplar el Illimani sin escalarlo.</p>
+        </div>
+    </div>
+    
+
+  <section class="revista" id="actividades">
+  
+    <div class="bloque">
+         <div class="img-contenedor">
+    <a href="https://www.instagram.com/explore/locations/107542870669698/canon-de-palca/recent/?__d=1%2F" target="_blank">
+        <div class="img-hover">
+            <img src="imagenes/imagenes_illimani/cañon de palca 2.jpg" alt="Cañon de palca">
+            <div class="overlay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icono-hover">
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="texto">
+            <h3 id="p3">  Cañón de Palca</h3>
+            <p>A solo 1 hora de La Paz, el Cañón de Palca ofrece un paisaje impresionante de torres de roca, caminos sinuosos y una postal inolvidable del Illimani. Puedes hacer senderismo desde el pueblo de Palca hasta sus formaciones más famosas.
+
+Apto para toda la familia.
+
+Rutas de media jornada (2-4 horas).
+
+Se puede combinar con visitas a Cohoni o la laguna.</p>
+        </div>
+    </div>
+    </section>
+
+        <div class="bloque inverso">
+         <div class="img-contenedor">
+    <a href="https://www.instagram.com/explore/locations/212417302635513/illimani/?locale=es_US%3FICID%3DBLOG_MBF_ES&hl=en" target="_blank">
+        <div class="img-hover">
+            <img src="imagenes/imagenes_illimani/quilihuaya.jpg" alt="quilihuaya">
+            <div class="overlay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icono-hover">
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="texto">
+            <h3 id="p4"> Mirador de Quilihuaya</h3>
+            <p>Ubicada en las faldas del Illimani, la comunidad de Quilihuaya ofrece una vista directa e impresionante del nevado. A diferencia de los miradores urbanos, aquí estás más cerca del gigante andino, rodeado de aire puro y silencio.
+
+Acceso por carretera rural desde Palca o Cohoni.
+
+Posibilidad de acampar o coordinar con comunarios.
+
+Ideal para descansar, observar y conectarse espiritualmente.
+
+Un mirador natural y poco conocido que merece ser descubierto.
+
+</p>
+        </div>
+    </div>
+
+    <div class="bloque">
+        <img src="" alt="">
+        <div class="texto">
+            <h3></h3>
+            <p></p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="info-horizontal" id="informacion">
+    <h2>Todo lo que debes saber</h2>
+    <div class="info-filas">
+        <div class="info-item">
+            <h3>¿Cómo llegar?</h3>
+            <p>Para escalada: Desde La Paz se viaja en vehículo (aprox. 5 h) hasta la comunidad de Pinaya, punto de inicio del ascenso.
+
+Para Laguna Arteza y Cohoni: Vehículo 4x4 desde La Paz hacia Palca, luego desvío a Cohoni (3-4 h en total).
+
+Para Cañón de Palca: Se puede llegar en auto o transporte público (1 h desde el centro).
+
+Para el mirador de Quilihuaya: Acceso por carretera rural, se recomienda 4x4 o ir con guía local..</p>
+        </div>
+        <div class="info-item">
+            <h3>Mejor época para visitar</h3>
+            <p>Mayo a agosto: temporada seca, ideal para caminatas, campamentos y escalada (cielos despejados y caminos más seguros).
+
+Evitar época de lluvias (diciembre a marzo), especialmente si se planea escalar o acampar.</p>
+        </div>
+        <div class="info-item">
+            <h3> ¿Qué llevar?</h3>
+            <p>Para todos: Ropa de abrigo, impermeable, bloqueador solar, agua, snacks, gorra o sombrero.
+
+Para senderismo o campamento: Calzado adecuado, linterna, sleeping bag, tienda si te quedas.
+
+Para escalada: Equipo técnico completo (casco, arnés, crampones, cuerdas, etc.) y guía certificado.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<div id="mi-footer"></div>
+
+<script>
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('mi-footer').innerHTML = data;
+    });
+</script>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
+
+<script>
+let desplazamientoTarjeta = 0;
+const contenedorTarjetas = document.getElementById('contenedorTarjetas');
+
+function moverTarjeta(direccion) {
+    const ancho = contenedorTarjetas.querySelector('.tarjeta').offsetWidth + 20; // 300px + gap
+    desplazamientoTarjeta += direccion * ancho;
+
+    const maxScroll = contenedorTarjetas.scrollWidth - contenedorTarjetas.clientWidth;
+    if (desplazamientoTarjeta < 0) desplazamientoTarjeta = 0;
+    if (desplazamientoTarjeta > maxScroll) desplazamientoTarjeta = maxScroll;
+
+    contenedorTarjetas.scrollTo({
+        left: desplazamientoTarjeta,
+        behavior: 'smooth'
+    });
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+/* Estilo general del cuerpo */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  margin: 0;
+  padding: 0;
+  
+}
+ 
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url('imagenes/fondo\ de\ pantalla.jpeg') no-repeat center center fixed;
+  background-color: #b0d9d9;
+  background-size: cover;
+}
+
+
+/* Galería de imágenes */
+.sec-1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.sec-1 img {
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.sec-1 img:hover {
+  transform: scale(1.05);
+}
+
+/* Títulos y textos centrados */
+h1, h2, h3, p {
+  text-align: center;
+  color: #2c3e50;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #037f8c;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards ease-out;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideInLeft 0.6s forwards ease-out;
+}
+
+form label:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+form label:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+form label:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+form label:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+form label:nth-of-type(5) {
+  animation-delay: 0.5s;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateX(20px);
+  animation: slideInRight 0.6s forwards ease-out;
+}
+
+form input[type="text"]:focus,
+form input[type="tel"]:focus,
+form input[type="email"]:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 6px rgba(74,144,226,0.5);
+}
+
+form input[type="text"]:nth-of-type(1),
+form input[type="tel"]:nth-of-type(2),
+form input[type="email"]:nth-of-type(3),
+form select:nth-of-type(4),
+form textarea:nth-of-type(5) {
+  animation-delay: 0.7s;
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form input[type="submit"] {
+  background-color: #4a90e2;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: popIn 0.6s forwards ease-out;
+  animation-delay: 1.1s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #357abd;
+  transform: scale(1.05);
+}
+
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000000;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Botón de envío */
+form input[type="submit"] {
+  background-color: #03a6a6;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Sección de contacto y mapa */
+
+iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+  .sec-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec-2 > div {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Animación para destinos */
+@keyframes subirSuave {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.destino {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 15px;
+  animation: subirSuave 1s ease-out forwards;
+  opacity: 0; /* para que no se vea hasta que la animación termine */
+}
+
+/* Animación escalonada para cada uno */
+.destino:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.destino:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.destino:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+/* Animación de derecha a izquierda */
+@keyframes derechaIzquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.destino {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 15px;
+  opacity: 0;
+  animation: derechaIzquierda 1s ease-out forwards;
+}
+
+/* Retraso para efecto en cascada */
+.destino:nth-of-type(1) {
+  animation-delay: 0.3s;
+}
+
+.destino:nth-of-type(2) {
+  animation-delay: 0.6s;
+}
+
+.destino:nth-of-type(3) {
+  animation-delay: 0.9s;
+}
+
+.contacto-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.iconos-redes img {
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.iconos-redes img:hover {
+  transform: scale(1.1);
+}

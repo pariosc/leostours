@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Turismo Bolivia</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="mi-encabezado"></div>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('mi-encabezado').innerHTML = data;
+      });
+  </script>
+
+   <section class="hero-coroico" id="inicio">
+        
+        <div class="hero-texto">
+            <h1>Coroico: Un paraíso tropical en las alturas</h1>
+            <p>"Donde los Andes se funden con la selva y la tranquilidad abraza tus sentidos."</p>
+        </div>
+    </section>
+
+  <section class="lugares-slider" id="lugares">
+    <h2>Destinos destacados</h2>
+    <div class="slider-contenedor">
+        <button class="flecha izquierda" onclick="moverTarjeta(-1)">&#10094;</button>
+
+        <div class="tarjetas-slider" id="contenedorTarjetas">
+            <div class="tarjeta">
+                <a href="#p1"> <img src="imagenes/imagenes_coroico/cascada.jpg" alt="cascada"> </a>
+                <h3>Cascadas de San Jacinto</h3>
+                <p>Déjate llevar por el sonido del agua cayendo entre montañas verdes.</p>
+            </div>
+            <div class="tarjeta">
+               <a href="#p2">  <img src="imagenes/imagenes_coroico/camino_de_la muerte 2.jpg" alt="camino de la muerte"></a>
+                <h3>Camino de la Muerte (Ruta de los Yungas)</h3>
+                <p>¿Te atreves con la ruta más extrema del mundo?</p>
+            </div>
+            <div class="tarjeta">
+               <a href="#p3">  <img src="imagenes/imagenes_coroico/rio vagante.jpg" alt=""></a>
+                <h3> Río Vagantes</h3>
+                <p>Un lugar perfecto para nadar, hacer picnic y relajarte con el clima cálido.</p>
+            </div>
+             <div class="tarjeta">
+                <a href="#p4"> <img src="imagenes/imagenes_coroico/mirador.webp" alt="mirador"></a>
+                <h3> Mirador de Coroico</h3>
+                <p>Admira una vista panorámica de valles y montañas cubiertas de neblina.</p>
+            </div>
+        </div>
+
+
+        <button class="flecha derecha" onclick="moverTarjeta(1)">&#10095;</button>
+    </div>
+    
+<section class="descripcion-coroico">
+  <div class="icono-titulo">
+
+    <h3>Coroico</h3>
+  </div>
+  <p>
+    Ubicado en el corazón de los Yungas paceños, a tan solo tres horas de La Paz, <strong>Coroico</strong> es un destino encantador que mezcla la frescura de la montaña con el calor de la selva.
+    Este pintoresco pueblo ofrece un clima templado durante todo el año, paisajes verdes, ríos cristalinos y una cultura rica en tradiciones.
+    Es perfecto tanto para quienes buscan relajarse y disfrutar del paisaje como para los amantes del turismo de aventura.
+    Su gente es cálida y hospitalaria, y sus calles empedradas invitan a recorrer cada rincón con calma.
+  </p>
+</section>
+<section class="revista" id="actividades">
+    <h2>¿Qué hacer en COROICO?</h2>
+
+    <div class="bloque">
+
+    <div class="img-contenedor">
+    <a href="https://www.instagram.com/explore/locations/305437526/las-cascadas---coroico/" target="_blank">
+        <div class="img-hover">
+            <img src="imagenes/imagenes_coroico/cascada.jpg" alt="Cascadas Coroico">
+            <div class="overlay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icono-hover">
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="texto">
+            <h3 id="p1"> San Jacinto</h3>
+            <p>Estas cascadas son un verdadero regalo natural. Rodeadas de vegetación frondosa y aire puro, ofrecen un espacio ideal para descansar, meditar o refrescarte en un clima cálido y húmedo. Se puede llegar caminando desde el centro del pueblo (aprox. 30-40 minutos) o en transporte local. Muchos visitantes hacen picnic junto al agua y aprovechan para sacarse fotografías únicas.</p>
+        </div>
+    </div>
+</section>
+    <div class="bloque inverso">
+           <div class="img-contenedor">
+    <a href="https://www.instagram.com/explore/locations/1023109230/la-carretera-de-la-muerte-la-paz-bolivia/?locale=es_ES" target="_blank">
+        <div class="img-hover">
+            <img src="imagenes/imagenes_coroico/camino_de_la muerte.jpg" alt="Cascadas Coroico">
+            <div class="overlay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icono-hover">
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="texto">
+            <h3 id="p2"> Camino de la Muerte (Ruta de los Yungas)</h3>
+            <p>Reconocida mundialmente como una de las rutas más peligrosas, hoy es un recorrido emblemático para el ciclismo de aventura. Descenderás desde más de 4.600 metros hasta cerca de 1.200 metros sobre el nivel del mar, atravesando niebla, selva, precipicios y ríos. Hay agencias que ofrecen el recorrido con guías, bicicletas y todo el equipo de seguridad necesario.</p>
+        </div>
+    </div>
+    
+
+  <section class="revista" id="actividades">
+  
+    <div class="bloque">
+         <div class="img-contenedor">
+    <a href="https://www.instagram.com/elvagante.99/?hl=es" target="_blank">
+        <div class="img-hover">
+            <img src="imagenes/imagenes_coroico/rio vagante.jpg" alt="Cascadas Coroico">
+            <div class="overlay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icono-hover">
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="texto">
+            <h3 id="p3">  Río Vagantes</h3>
+            <p>Este río de aguas tranquilas es frecuentado por familias locales y turistas que buscan descansar en sus orillas. Es común ver a niños nadando, personas descansando bajo la sombra de los árboles y grupos compartiendo comida típica. El acceso es sencillo, y puedes llegar caminando o en transporte desde el centro de Coroico.</p>
+        </div>
+    </div>
+    </section>
+
+        <div class="bloque inverso">
+         <div class="img-contenedor">
+    <a href="https://www.instagram.com/hostalsolylunacoroico/?hl=es" target="_blank">
+        <div class="img-hover">
+            <img src="imagenes/imagenes_coroico/mirador.webp" alt="mirador">
+            <div class="overlay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icono-hover">
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="texto">
+            <h3 id="p4"> Mirador de Coroico</h3>
+            <p>Desde este mirador natural se obtiene una vista impresionante de la región de los Yungas. En los días despejados se puede ver el nevado Illimani a lo lejos, y por las mañanas es común observar el mar de nubes que cubre el valle. Es uno de los sitios preferidos para tomar fotografías y disfrutar del amanecer o el atardecer.</p>
+        </div>
+    </div>
+
+    <div class="bloque">
+        <img src="" alt="">
+        <div class="texto">
+            <h3></h3>
+            <p></p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="info-horizontal" id="informacion">
+    <h2>Todo lo que debes saber</h2>
+    <div class="info-filas">
+        <div class="info-item">
+            <h3>¿Cómo llegar?</h3>
+            <p>Bolivia tiene conexiones aéreas y terrestres desde países vecinos. Las ciudades principales cuentan con vuelos y buses turísticos.</p>
+        </div>
+        <div class="info-item">
+            <h3>Principales aeropuertos</h3>
+            <p>Santa Cruz, La Paz y Cochabamba tienen aeropuertos internacionales con conexiones internas y regionales.</p>
+        </div>
+        <div class="info-item">
+            <h3>Opciones de hospedaje</h3>
+            <p>Desde hoteles boutique hasta hospedajes rurales, Bolivia ofrece alternativas para todo tipo de viajero.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<div id="mi-footer"></div>
+
+<script>
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('mi-footer').innerHTML = data;
+    });
+</script>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
+
+<script>
+let desplazamientoTarjeta = 0;
+const contenedorTarjetas = document.getElementById('contenedorTarjetas');
+
+function moverTarjeta(direccion) {
+    const ancho = contenedorTarjetas.querySelector('.tarjeta').offsetWidth + 20; // 300px + gap
+    desplazamientoTarjeta += direccion * ancho;
+
+    const maxScroll = contenedorTarjetas.scrollWidth - contenedorTarjetas.clientWidth;
+    if (desplazamientoTarjeta < 0) desplazamientoTarjeta = 0;
+    if (desplazamientoTarjeta > maxScroll) desplazamientoTarjeta = maxScroll;
+
+    contenedorTarjetas.scrollTo({
+        left: desplazamientoTarjeta,
+        behavior: 'smooth'
+    });
+}
+</script>
+
+
+
+</body>
+</html>
