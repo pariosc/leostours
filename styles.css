@@ -48,9 +48,57 @@ header.encabezado {
     color: #F2A88D; /* Durazno */
 }
 
-.hero {
+.hero-coroico {
     height: 100vh;
     background-image: url('imagenes/imagenes_coroico/coroico portada.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+}
+.hero-centro {
+    height: 100vh;
+    background-image: url('imagenes/imagenes_centro/centro2.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+}
+.hero-valle {
+    height: 100vh;
+    background-image: url('imagenes/imagenes_valle_de_la_luna/valle de la luna 1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+}
+.hero-copacabana {
+    height: 100vh;
+    background-image: url('imagenes/imagenes_copacabana/copacabana\ 2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+}
+.hero-illimani {
+    height: 100vh;
+    background-image: url('imagenes/imagenes_illimani/illimani 4.jpg');
     background-size: cover;
     background-position: center;
     display: flex;

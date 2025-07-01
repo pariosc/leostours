@@ -8,19 +8,17 @@
 </head>
 <body>
 
-    <header class="encabezado">
-        <div class="logo">Turismo Bolivia</div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#lugares">Destinos</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<div id="mi-encabezado"></div>
 
-ç    <section class="hero" id="inicio">
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('mi-encabezado').innerHTML = data;
+      });
+  </script>
+
+   <section class="hero-coroico" id="inicio">
         
         <div class="hero-texto">
             <h1>Coroico: Un paraíso tropical en las alturas</h1>
@@ -179,17 +177,15 @@
 
 
 
+<div id="mi-footer"></div>
 
-
-
-+<footer>
-    <p>&copy; 2025 Turismo Bolivia</p>
-    <div class="redes">
-        <a href="#"><img src="iconos/facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="iconos/instagram.svg" alt="Instagram"></a>
-        <a href="#"><img src="iconos/youtube.svg" alt="YouTube"></a>
-    </div>
-</footer>    
+<script>
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('mi-footer').innerHTML = data;
+    });
+</script>
 
 <script async src="//www.instagram.com/embed.js"></script>
 
